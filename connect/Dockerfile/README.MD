@@ -3,13 +3,13 @@
 
 - Build Image
 
- ```
+  ```
 docker build -t kafka-connect-jdbc:4.1.1 .
- ```
+  ```
 
 - Run Container
 
- ```
+  ```
 docker run -d \
   --name=kafka-connect \
   -p 28082:28082 \
@@ -27,4 +27,4 @@ docker run -d \
   -e CONNECT_LOG4J_LOGGERS=org.reflections=ERROR \
   -e CONNECT_PLUGIN_PATH=/usr/share/java \
 kafka-connect-jdbc:4.1.1
- ```
+  ```
